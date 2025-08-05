@@ -45,14 +45,14 @@ const Hero = () => {
             {/* Projects Button */}
             <Link
               to="/projects"
-              className="inline-flex items-center gap-2 px-4 py-2 bg-white text-gray-900 rounded-full shadow hover:bg-gray-200 transition text-md font-semibold"
+              className="inline-flex items-center gap-2 px-4 py-2 bg-white text-gray-900 rounded-full shadow hover:bg-purple-500 hover:shadow-2xl hover:text-white border border-transparent hover:border-white/40 transition transform-3d duration-300 ease-in-out text-md font-semibold"
             >
               🚀 Projects
           </Link>
           
           <Link
             to="/learning"
-            className="inline-flex items-center gap-2 px-4 py-2 bg-white text-gray-900 rounded-full shadow hover:bg-gray-200 transition text-md font-semibold"
+            className="inline-flex items-center gap-2 px-4 py-2 bg-white text-gray-900 rounded-full shadow hover:bg-purple-500 hover:shadow-2xl hover:text-white border border-transparent hover:border-white/40 transition transform-3d duration-300 ease-in-out text-md font-semibold"
           >
             📚 Start Learning
           </Link>
@@ -61,7 +61,7 @@ const Hero = () => {
               href="https://github.com/eaglefree007"
               target="_blank"
               rel="noopener noreferrer"
-              className=" inline-flex items-center gap-2 px-4 py-2 bg-white text-gray-900 rounded-full shadow hover:bg-gray-200 transition"
+              className=" inline-flex items-center gap-2 px-4 py-2 bg-white text-gray-900 rounded-full shadow hover:bg-purple-500 hover:shadow-2xl hover:text-white border border-transparent hover:border-white/40 transition transform-3d duration-300 ease-in-out"
             >
               <FaGithub className="text-xl" />
               <span className="text-md font-semibold">GitHub</span>
@@ -71,9 +71,15 @@ const Hero = () => {
             href="https://orcid.org/0009-0009-5079-640X" // replace with your ORCID
             target="_blank"
             rel="noopener noreferrer"
-            className="text-sm text-green-400 hover:underline flex items-center gap-1"
+            className="text-sm text-green-300 rounded-full border border-white/10 px-4 py-2 hover:bg-purple-400 hover:text-white transition transform-3d duration-300 ease-in-out hover:underline flex items-center gap-1"
           >
             <i className="fab fa-orcid"></i> ORCID: 0009-0009-5079-640X
+          </a>
+
+          <a href="#contact">
+            <button className="px-6 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition">
+              📩 Contact Me
+            </button>
           </a>
           </div>
         </div>
