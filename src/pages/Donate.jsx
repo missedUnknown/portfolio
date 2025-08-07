@@ -14,7 +14,7 @@ const Donate = () => {
       <div className="flex flex-col md:flex-row gap-6">
         {/* Buy Me a Coffee */}
         <a
-          href="https://www.buymeacoffee.com/yourusername"
+          href="https://www.buymeacoffee.com/abheyk04m"
           target="_blank"
           rel="noopener noreferrer"
           className="bg-yellow-400 text-black px-6 py-3 rounded-lg text-lg font-semibold shadow-md hover:bg-yellow-300 flex items-center gap-2 transition-all"
