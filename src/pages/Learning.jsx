@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import BackToHome from '../components/BackToHome';
+import { Link } from 'react-router-dom';
+
 
 const syllabusData = [
   {
@@ -112,7 +114,13 @@ const Learning = () => {
       <h1 className="text-3xl font-bold text-center mb-8">
         📚 Learning Slaybus
       </h1>
-      <div className="max-w-4xl mx-auto space-y-4">
+
+      <div className="w-full  flex items-center justify-center pb-4">
+        <Link to="/curriculum" className="text-white/60 hover:italic transition duration-300 ease-in-out hover:shadow-2xl text-center mx-auto hover:underline">
+          View Curriculum
+        </Link>
+      </div>
+      <div className="max-w-4xl mx-auto space-y-3">
         {syllabusData.map((section, index) => (
           <div
             key={index}

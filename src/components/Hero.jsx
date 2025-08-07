@@ -81,6 +81,10 @@ const Hero = () => {
               📩 Contact Me
             </button>
           </a>
+
+          <Link to="/donate" className="text-white italic px-4 py-2 border border-purple-400 rounded-full transition duration-300 ease-in-out hover:bg-white/20">
+            ☕ let's have a sip !
+          </Link>
           </div>
         </div>
       </div>

@@ -4,6 +4,8 @@ import Home from '../pages/Home';
 import Projects from '../pages/Projects';
 import Learning from '../pages/Learning';
 import Contact from '../pages/Contact';
+import CurriculumPage from '../pages/CurriculumPage';
+import Donate from '../pages/Donate';
 
 
 function AppRoutes() {
@@ -14,6 +16,8 @@ function AppRoutes() {
       <Route path="/projects" element={<Projects />} />
       <Route path="/learning" element={<Learning />} />
       <Route path="/contact" element={<Contact />} />
+      <Route path="/curriculum" element={<CurriculumPage />} />
+      <Route path="/donate" element={<Donate />} />
     </Routes>
   );
 }
