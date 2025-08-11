@@ -2,7 +2,9 @@
 import React, { useEffect, useState } from "react";
 import { io } from "socket.io-client";
 
-const socket = io("https://missed-backend.vercel.app/"); // change to your backend URL when deployed
+// Localhost backend connection
+// const socket = io("http://localhost:5000");
+const socket = io("https://missed-backend.vercel.app/");
 
 export default function StatusDashboard() {
   const [statusData, setStatusData] = useState({
@@ -27,15 +29,13 @@ export default function StatusDashboard() {
       <h2 className="text-2xl font-bold mb-4">🚀 API Live Status</h2>
       <span
         className={`px-4 py-1 rounded-full font-semibold ${
-          statusData.status === "Online"
-            ? "bg-green-500"
-            : "bg-red-500"
+          statusData.status === "Online" ? "bg-green-500" : "bg-red-500"
         }`}
       >
         {statusData.status}
       </span>
       <p className="mt-4">Version: <strong>{statusData.version}</strong></p>
-      <p>Uptime: <strong>{statusData.uptime}s</strong></p>
+      <p>Uptime: <strong>{Math.floor(statusData.uptime)}s</strong></p>
       <p>Server Time: <strong>{statusData.serverTime}</strong></p>
     </div>
   );

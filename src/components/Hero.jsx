@@ -85,6 +85,12 @@ const Hero = () => {
           <Link to="/donate" className="text-white italic px-4 py-2 border border-purple-400 rounded-full transition duration-300 ease-in-out hover:bg-white/20">
             ☕ let's have a sip !
           </Link>
+          
+          <Link to="/statusDashboard" className="text-white italic px-4 py-2 border border-purple-400 rounded-full transition duration-300 ease-in-out hover:bg-white/20">
+            StatusDashboard
+          </Link>
+
+
           </div>
         </div>
       </div>

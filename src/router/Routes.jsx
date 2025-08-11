@@ -6,7 +6,7 @@ import Learning from '../pages/Learning';
 import Contact from '../pages/Contact';
 import CurriculumPage from '../pages/CurriculumPage';
 import Donate from '../pages/Donate';
-import BackendStatus from '../pages/BackendStatus';
+import StatusDashboard from '../pages/StatusDashboard';
 
 
 function AppRoutes() {
@@ -20,7 +20,7 @@ function AppRoutes() {
       <Route path="/contact" element={<Contact />} />
       <Route path="/curriculum" element={<CurriculumPage />} />
       <Route path="/donate" element={<Donate />} />
-      <Route path="/BackendStatus" element={<BackendStatus />} />
+      <Route path="/statusDashboard" element={<StatusDashboard />} />
       
     </Routes>
   );
